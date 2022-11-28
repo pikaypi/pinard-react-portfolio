@@ -9,19 +9,19 @@ export default function Display() {
     const [currentPage, setCurrentPage] = useState('aboutMe');
 
     const renderPage = () => {
-        if (currentPage === 'aboutMe') {
-            return <AboutMe />;
+        switch (currentPage) {
+            case 'aboutMe':
+                return <AboutMe />
+            case 'contact':
+                return <Contact />
+            case 'portfolio':
+                return <Portfolio />
+            case 'resume':
+                return <Resume />        
+            default:
+                break;
         }
-        if (currentPage === 'contact') {
-            return <Contact />;
-        }
-        if (currentPage === 'portfolio') {
-            return <Portfolio />;
-        }
-        if (currentPage === 'resume') {
-            return <Resume />;
-        }            
-    };
+    }
 
     const handlePageChange = (page) => setCurrentPage(page);
 
