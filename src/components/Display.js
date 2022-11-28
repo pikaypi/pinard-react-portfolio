@@ -6,19 +6,19 @@ import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
 
 export default function Display() {
-    const [currentPage, setCurrentPage] = useState('AboutMe');
+    const [currentPage, setCurrentPage] = useState('aboutMe');
 
     const renderPage = () => {
-        if (currentPage === 'AboutMe') {
+        if (currentPage === 'aboutMe') {
             return <AboutMe />;
         }
-        if (currentPage === 'Contact') {
+        if (currentPage === 'contact') {
             return <Contact />;
         }
-        if (currentPage === 'Portfolio') {
+        if (currentPage === 'portfolio') {
             return <Portfolio />;
         }
-        if (currentPage === 'Resume') {
+        if (currentPage === 'resume') {
             return <Resume />;
         }            
     };
