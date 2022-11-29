@@ -1,6 +1,11 @@
 import React, {useState} from 'react';
-import PortfolioDisplay from './PortfolioDisplay';
 import SpillinBeans from './projects/SpillinBeans';
+import WeekendPlanner from './projects/WeekendPlanner';
+import WeatherDashboard from './projects/WeatherDashboard'
+import DailyPlanner from './projects/DailyPlanner';
+import MultipleChoice from './projects/MultipleChoice'
+import PasswordGenerator from './projects/PasswordGenerator';
+import Gallery from './Gallery';
 
 function Portfolio() {
   const [currentProject, setCurrentProject] = useState('spillinBeans');
@@ -8,7 +13,17 @@ function Portfolio() {
   const renderProject = () => {
     switch (currentProject) {
       case 'spillinBeans':
-        return <SpillinBeans />    
+        return <SpillinBeans />
+      case 'weekendPlanner':
+        return <WeekendPlanner />    
+      case 'weatherDashboard':
+        return <WeatherDashboard />
+      case 'dailyPlanner':
+        return <DailyPlanner />
+      case 'multipleChoice':
+        return <MultipleChoice />
+      case 'passwordGenerator':
+        return <PasswordGenerator />
       default:
         break;
     }
@@ -19,7 +34,7 @@ function Portfolio() {
   return (
     <div>
       {renderProject()}
-      <p>This is the portfolio gallery</p>
+      <Gallery handleProjectChange={handleProjectChange}/>
     </div>
   )
 }
