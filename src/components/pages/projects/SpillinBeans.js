@@ -1,5 +1,5 @@
 import React from "react";
-import image from '../../../images/Spillin-Beans.png';
+import image from '../../../images/spillin-beans.png';
 
 export default function SpillinBeans() {
     return (
