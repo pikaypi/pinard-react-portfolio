@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/pinard-react-portfolio/static/css/main.c2cab247.css",
+    "main.js": "/pinard-react-portfolio/static/js/main.69adab41.js",
+    "static/media/spillin-beans.png": "/pinard-react-portfolio/static/media/spillin-beans.00d1920df815f7f85a0c.png",
+    "static/media/weekend-planner.png": "/pinard-react-portfolio/static/media/weekend-planner.08134a9ef143e588f629.png",
+    "static/media/multiple-choice.png": "/pinard-react-portfolio/static/media/multiple-choice.8c2dde0baa47adb7fb87.png",
+    "static/media/weather-dashboard.png": "/pinard-react-portfolio/static/media/weather-dashboard.c1bbc3710cfd6af87c4c.png",
+    "static/media/daily-planner.png": "/pinard-react-portfolio/static/media/daily-planner.20a2d468916c0fc318d1.png",
+    "static/media/password-generator.png": "/pinard-react-portfolio/static/media/password-generator.2e5662a82857621f77b3.png",
+    "static/media/profile-picture.jpg": "/pinard-react-portfolio/static/media/profile-picture.4d5abf80dacdaec52e92.jpg",
+    "index.html": "/pinard-react-portfolio/index.html",
+    "main.c2cab247.css.map": "/pinard-react-portfolio/static/css/main.c2cab247.css.map",
+    "main.69adab41.js.map": "/pinard-react-portfolio/static/js/main.69adab41.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c2cab247.css",
+    "static/js/main.69adab41.js"
+  ]
+}
