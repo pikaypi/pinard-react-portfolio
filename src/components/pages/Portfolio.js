@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
-import SpillinBeans from './projects/SpillinBeans';
-import WeekendPlanner from './projects/WeekendPlanner';
-import WeatherDashboard from './projects/WeatherDashboard'
-import DailyPlanner from './projects/DailyPlanner';
-import MultipleChoice from './projects/MultipleChoice'
-import PasswordGenerator from './projects/PasswordGenerator';
+import DisplayProject from './DisplayProject';
+import SpillinBeansImg from '../../images/spillin-beans.png';
+import WeekendPlannerImg from '../../images/weekend-planner.png';
+import WeatherDashboardImg from '../../images/weather-dashboard.png'
+import DailyPlannerImg from '../../images/daily-planner.png';
+import MultipleChoiceImg from '../../images/multiple-choice.png'
+import PasswordGeneratorImg from '../../images/password-generator.png';
 import Gallery from './Gallery';
 
 function Portfolio() {
@@ -13,17 +14,47 @@ function Portfolio() {
   const renderProject = () => {
     switch (currentProject) {
       case 'spillinBeans':
-        return <SpillinBeans />
+        return <DisplayProject
+          name={`Spillin' Beans`}
+          image={SpillinBeansImg}
+          url='https://spillin-beans.herokuapp.com/'
+          description={`Spillin' Beans is an application that allows users to create, store, and share recipes.`}
+        />
       case 'weekendPlanner':
-        return <WeekendPlanner />    
+        return <DisplayProject
+          name='Extended Weekend Planner'
+          image={WeekendPlannerImg}
+          url='https://pikaypi.github.io/extended-weekend-planner/'
+          description='The Extended Weekend Planner uses your IP address to determine the dates for holidays in your area over the next year.'
+        />      
       case 'weatherDashboard':
-        return <WeatherDashboard />
+        return <DisplayProject
+          name='Weather Dashboard'
+          image={WeatherDashboardImg}
+          url='https://pikaypi.github.io/weather-dashboard/'
+          description='The Weather Dashboard allows a user to search for a city and view the current weather as well as a five-day forecast.'
+        />         
       case 'dailyPlanner':
-        return <DailyPlanner />
+        return <DisplayProject
+          name='Daily Planner'
+          image={DailyPlannerImg}
+          url='https://pikaypi.github.io/daily-planner/'
+          description='The Daily Planner allows a user to store, change, and delete events on a personal calendar.'
+        />         
       case 'multipleChoice':
-        return <MultipleChoice />
+        return <DisplayProject
+          name='Multiple Choice Quiz'
+          image={MultipleChoiceImg}
+          url='https://pikaypi.github.io/multiple-choice-quiz/'
+          description='This multiple choice quiz game tests a player on their knowledge of basic programming trivia.'
+        />         
       case 'passwordGenerator':
-        return <PasswordGenerator />
+        return <DisplayProject
+          name='Password Generator'
+          image={PasswordGeneratorImg}
+          url='https://pikaypi.github.io/random-password-generator/'
+          description='This application will generate a random password of any desired length. This password will include the types of characters desired and only those characters.'
+        />          
       default:
         break;
     }
