@@ -4,8 +4,6 @@ import picture from '../../images/profile-picture.jpg';
 
 function AboutMe() {
   return (
-    <div>
-      <h2>This is the "About Me" component</h2>
       <div className='row'>
         <img src={picture} alt='Me running my first half marathon' className='col-4'/>
         <div className='col-8'>
@@ -14,7 +12,6 @@ function AboutMe() {
           <p>In my free time I enjoy making music with friends, cooking, and running. I live in Manchester, NH with my cat, Lizzie.</p>
         </div>
       </div>
-    </div>
   )
 }
 
