@@ -1,0 +1,13 @@
+.navbar {
+    background-image: linear-gradient(to right, #fcc, white, #ccf);
+    margin-bottom: 10px;
+}
+
+.nav-tabs {
+    margin-bottom: 0px;
+}
+
+.navbar h1 {
+    color: #333;
+    margin-left: 10px;
+}
