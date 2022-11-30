@@ -63,9 +63,13 @@ function Portfolio() {
   const handleProjectChange = (project) => setCurrentProject(project)
   
   return (
-    <div>
-      {renderProject()}
-      <Gallery handleProjectChange={handleProjectChange}/>
+    <div className='row'>
+      <div className='container col-6'>
+        {renderProject()}
+      </div>
+      <div className='container col-6'>
+        <Gallery handleProjectChange={handleProjectChange}/>
+      </div>
     </div>
   )
 }
