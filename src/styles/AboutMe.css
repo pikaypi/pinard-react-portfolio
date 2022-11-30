@@ -1,0 +1,19 @@
+
+
+.img-container img {
+    border-radius: 1rem;
+    width: auto;
+}
+
+.bio {
+    padding-top: 15px;
+    padding-left: 15px;
+    font-size: medium;
+}
+
+@media screen and (max-width: 768px) {
+    .img-container {
+        display: flex;
+        justify-content: center;
+    }
+}
