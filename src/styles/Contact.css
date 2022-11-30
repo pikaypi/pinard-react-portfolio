@@ -1,0 +1,22 @@
+.message {
+    height: 100px;
+}
+
+.form-container {
+    text-align: center;
+}
+
+.form {
+    display: grid;
+    row-gap: 1px;
+    width: 50%;
+    margin: auto;
+}
+
+.input {
+    width: 50%;
+}
+
+.submit {
+    width: fit-content;
+}

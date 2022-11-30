@@ -32,7 +32,7 @@ export default function Contact() {
   }
 
   return (
-    <div>
+    <div className='container form-container'>
       <h2>Leave a Message</h2>
       <form className='form'>
         <input
@@ -41,22 +41,32 @@ export default function Contact() {
           type='text'
           placeholder='Name'
           onChange={handleInputChange}
+          className='input'
         />
+        <br/>
         <input
           value={email}
           name='email'
           type='text'
           placeholder='Email Address'
           onChange={handleInputChange}
+          className='input'
         />
+        <br/>
         <input
           value={message}
           name='message'
           type='text-area'
           placeholder='Message'
           onChange={handleInputChange}
+          className='message'
         />
-        <button type='button' onClick={handleFormSubmit}>
+        <br/>
+        <button
+          type='button'
+          onClick={handleFormSubmit}
+          className='submit'
+        >
           Submit
         </button>
       </form>
