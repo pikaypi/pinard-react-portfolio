@@ -4,6 +4,8 @@ import AboutMe from './pages/AboutMe';
 import Contact from './pages/Contact';
 import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
+import Footer from './Footer';
+import '../styles/Display.css'
 
 export default function Display() {
     const [currentPage, setCurrentPage] = useState('aboutMe');
@@ -26,9 +28,12 @@ export default function Display() {
     const handlePageChange = (page) => setCurrentPage(page);
 
     return (
-        <div>
+        <div className='page-container'>
             <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
-            {renderPage()}
+            <div className='content'>
+                {renderPage()}
+            </div>
+            <Footer />
         </div>
     )
 }
