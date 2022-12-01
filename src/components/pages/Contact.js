@@ -1,12 +1,15 @@
 import React, {useState} from 'react';
+import { validateEmail } from '../../utils/helpers';
 import '../../styles/Contact.css';
 
 export default function Contact() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [submitMessage, setSubmitMessage] = useState('');
 
   const handleInputChange = (e) => {
+    setSubmitMessage('')
     const {name, value} = e.target;
     switch (name) {
       case 'name':
@@ -25,7 +28,19 @@ export default function Contact() {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    alert(`Thank you ${name} for submitting your message! Paul will return your message at ${email}`)
+    if (!name) {
+      setSubmitMessage('Please be sure to leave your name with your message');
+      return
+    } else if (!validateEmail(email)) {
+      setSubmitMessage('Please enter a valid email address');
+      return
+    } else if (!message) {
+      setSubmitMessage('Uh oh! It looks like you forgot to leave a message!');
+      return
+    } else {
+        setSubmitMessage(`Thank you, ${name}, for leaving a message. Paul will get back to you at ${email} very soon!`)
+    }
+
     setName('');
     setEmail('');
     setMessage('');
@@ -47,7 +62,7 @@ export default function Contact() {
         <input
           value={email}
           name='email'
-          type='text'
+          type='email'
           placeholder='Email Address'
           onChange={handleInputChange}
           className='input'
@@ -70,6 +85,12 @@ export default function Contact() {
           Submit
         </button>
       </form>
+      <br/>
+      {submitMessage && (
+        <div>
+          <p className="error-text">{submitMessage}</p>
+        </div>
+      )}
     </div>
   )
 }
