@@ -64,10 +64,10 @@ function Portfolio() {
   
   return (
     <div className='row'>
-      <div className='container col-6'>
+      <div className='container col-8'>
         {renderProject()}
       </div>
-      <div className='container col-6'>
+      <div className='container col-4'>
         <Gallery handleProjectChange={handleProjectChange}/>
       </div>
     </div>
