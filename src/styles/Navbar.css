@@ -1,12 +1,16 @@
 .navbar {
-    background-image: linear-gradient(to right, #fcc, white, #ccf);
-}
-
-.nav-tabs {
-    margin-bottom: 0px;
+    background-image: linear-gradient(to bottom, #ccf, white);
+    text-align: center;
 }
 
 .navbar h1 {
-    color: #333;
-    margin-left: 10px;
+    color: #083d77;
+    margin-left: 20px;
+    font-size: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar h1, ul {
+        margin: auto;
+    }
 }
