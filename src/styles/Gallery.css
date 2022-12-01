@@ -1,0 +1,13 @@
+.gallery-container {
+    border-left: solid black 1px;
+}
+
+.gallery-card {
+    width: 80%;
+    margin: 10% auto;
+    text-align: center;
+}
+
+.gallery-card h3 {
+    font-size: medium;
+}
