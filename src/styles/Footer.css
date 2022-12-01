@@ -1,0 +1,15 @@
+.footer {
+    position: absolute;
+    margin-left: 25%;
+    bottom: 10px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        margin-left: 10%;
+        width: 80%;
+    }
+}
