@@ -1,5 +1,5 @@
 .gallery-container {
-    border-left: solid black 1px;
+    text-align: center;
 }
 
 .gallery-card {
@@ -10,4 +10,10 @@
 
 .gallery-card h3 {
     font-size: medium;
+}
+
+@media screen and (min-width: 769px) {
+    .gallery-container {
+        border-left: solid black 1px;
+    }
 }

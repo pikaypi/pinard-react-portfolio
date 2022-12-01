@@ -12,7 +12,7 @@ export default function Gallery({ handleProjectChange }) {
         <div className="container gallery-container">
             <h2>Choose a project to see more details!</h2>
             <div className="row">
-                <div className="col-4">
+                <div className="col-6 col-md-4">
                     <div className="card gallery-card">
                         <a href="#spillinBeans" onClick={() => handleProjectChange('spillinBeans')}>
                             <img src={spillinBeansImg} alt={`A screenshot of the Spillin' Beans homepage`} className={'card-img-top'}/>
@@ -22,7 +22,7 @@ export default function Gallery({ handleProjectChange }) {
                         </a>
                     </div>
                 </div>
-                <div className="col-4">
+                <div className="col-6 col-md-4">
                     <div className="card gallery-card">
                         <a href="#weekendPlanner" onClick={() => handleProjectChange('weekendPlanner')}>
                             <img src={weekendPlannerImg} alt={`A screenshot of the Extended Weekend Planner homepage`} className={'card-img-top'}/>
@@ -32,7 +32,7 @@ export default function Gallery({ handleProjectChange }) {
                         </a>
                     </div>
                 </div>
-                <div className="col-4">
+                <div className="col-6 col-md-4">
                     <div className="card gallery-card">
                         <a href="#weatherDashboard" onClick={() => handleProjectChange('weatherDashboard')}>
                             <img src={weatherDashboardImg} alt={`A screenshot of the Weather Dashboard homepage`} className={'card-img-top'}/>
@@ -42,9 +42,7 @@ export default function Gallery({ handleProjectChange }) {
                         </a>
                     </div>
                 </div>
-            </div>
-            <div className="row">
-                <div className="col-4">
+                <div className="col-6 col-md-4">
                     <div className="card gallery-card">
                         <a href="#dailyPlanner" onClick={() => handleProjectChange('dailyPlanner')}>
                             <img src={dailyPlannerImg} alt={`A screenshot of the Daily Planner homepage`} className={'card-img-top'}/>
@@ -54,7 +52,7 @@ export default function Gallery({ handleProjectChange }) {
                         </a>
                     </div>
                 </div>
-                <div className="col-4">
+                <div className="col-6 col-md-4">
                     <div className="card gallery-card">
                         <a href="#multipleChoice" onClick={() => handleProjectChange('multipleChoice')}>
                             <img src={multipleChoiceImg} alt={`A screenshot of the Multiple Choice Quiz homepage`} className={'card-img-top'}/>
@@ -64,7 +62,7 @@ export default function Gallery({ handleProjectChange }) {
                         </a>
                     </div>
                 </div>
-                <div className="col-4">
+                <div className="col-6 col-md-4">
                     <div className="card gallery-card">
                         <a href="#passwordGenerator" onClick={() => handleProjectChange('passwordGenerator')}>
                             <img src={passwordGeneratorImg} alt={`A screenshot of the Password Generator homepage`} className={'card-img-top'}/>
