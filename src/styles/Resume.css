@@ -1,0 +1,8 @@
+.resume-container {
+    display: flex;
+    justify-content: center;
+}
+
+.resume {
+    max-width: 768px;
+}
