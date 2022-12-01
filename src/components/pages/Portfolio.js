@@ -18,6 +18,7 @@ function Portfolio() {
           name={`Spillin' Beans`}
           image={SpillinBeansImg}
           url='https://spillin-beans.herokuapp.com/'
+          repo='https://github.com/derekson333/Spillin-Beans'
           description={`Spillin' Beans is an application that allows users to create, store, and share recipes.`}
         />
       case 'weekendPlanner':
@@ -25,6 +26,7 @@ function Portfolio() {
           name='Extended Weekend Planner'
           image={WeekendPlannerImg}
           url='https://pikaypi.github.io/extended-weekend-planner/'
+          repo='https://github.com/pikaypi/extended-weekend-planner'
           description='The Extended Weekend Planner uses your IP address to determine the dates for holidays in your area over the next year.'
         />      
       case 'weatherDashboard':
@@ -32,6 +34,7 @@ function Portfolio() {
           name='Weather Dashboard'
           image={WeatherDashboardImg}
           url='https://pikaypi.github.io/weather-dashboard/'
+          repo='https://github.com/pikaypi/weather-dashboard'
           description='The Weather Dashboard allows a user to search for a city and view the current weather as well as a five-day forecast.'
         />         
       case 'dailyPlanner':
@@ -39,6 +42,7 @@ function Portfolio() {
           name='Daily Planner'
           image={DailyPlannerImg}
           url='https://pikaypi.github.io/daily-planner/'
+          repo='https://github.com/pikaypi/daily-planner'
           description='The Daily Planner allows a user to store, change, and delete events on a personal calendar.'
         />         
       case 'multipleChoice':
@@ -46,6 +50,7 @@ function Portfolio() {
           name='Multiple Choice Quiz'
           image={MultipleChoiceImg}
           url='https://pikaypi.github.io/multiple-choice-quiz/'
+          repo='https://github.com/pikaypi/multiple-choice-quiz'
           description='This multiple choice quiz game tests a player on their knowledge of basic programming trivia.'
         />         
       case 'passwordGenerator':
@@ -53,6 +58,7 @@ function Portfolio() {
           name='Password Generator'
           image={PasswordGeneratorImg}
           url='https://pikaypi.github.io/random-password-generator/'
+          repo='https://github.com/pikaypi/random-password-generator'
           description='This application will generate a random password of any desired length. This password will include the types of characters desired and only those characters.'
         />          
       default:
