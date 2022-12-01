@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from './Navbar';
 import AboutMe from './pages/AboutMe';
 import Contact from './pages/Contact';
@@ -9,6 +9,10 @@ import '../styles/Display.css'
 
 export default function Display() {
     const [currentPage, setCurrentPage] = useState('aboutMe');
+
+    useEffect(() => {
+        document.title = 'Paul Pinard'
+    }, [])
 
     const renderPage = () => {
         switch (currentPage) {
