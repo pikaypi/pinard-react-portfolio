@@ -11,11 +11,11 @@ function Navbar({ currentPage, handlePageChange }) {
             About Me
           </a>
         </li>
-        <li className='nav-item'>
+        {/* <li className='nav-item'>
           <a href='#contact' onClick={() => handlePageChange('contact')} className={currentPage === 'contact' ? 'nav-link active' : 'nav-link text-dark'}>
             Contact
           </a>
-        </li>
+        </li> */}
         <li className='nav-item'>
           <a href='#portfolio' onClick={() => handlePageChange('portfolio')} className={currentPage === 'portfolio' ? 'nav-link active' : 'nav-link text-dark'}>
             Portfolio
